@@ -16,9 +16,9 @@ This document explains how to keep repositories synchronized:
 └──────────────┬─────────────────┘
                │
                ▼
-┌────────────────────────┐
-│ Local clone: PRODUCTION│  ← Personal working repo with edits
-└────────────────────────┘
+┌───────────────────────────────┐
+│ Local worktree: PRODUCTION    │  ← Personal working branch with edits
+└───────────────────────────────┘
 ```
 
 ---
@@ -27,9 +27,9 @@ This document explains how to keep repositories synchronized:
 
 ```text
 
-/Users/josh/Projects/llm_engineering/
-├── main/         ← clone of personal fork (joshphillipssr/llm_engineering)
-└── production/   ← clone of main for personal edits
+/Users/josh/Projects/joshphillipssr/llm_engineering/
+├── main/         ← git repo root tracking origin/main
+└── production/   ← linked worktree for branch production
 ```
 
 ---
@@ -39,7 +39,7 @@ This document explains how to keep repositories synchronized:
 ### Step 1. Open the `main` folder
 
 ```bash
-cd /Users/josh/Projects/llm_engineering/main
+cd /Users/josh/Projects/joshphillipssr/llm_engineering/main
 ```
 
 ### Step 2. Add the original repo as “upstream” (only once)
@@ -91,7 +91,7 @@ git push origin main
 ### Step 1. Open the `production` folder
 
 ```bash
-cd /Users/josh/Projects/llm_engineering/production
+cd /Users/josh/Projects/joshphillipssr/llm_engineering/production
 ```
 
 ### Step 2. Confirm you’re on the correct branch
@@ -195,13 +195,13 @@ git push origin production
 
 ```bash
 # --- MAIN ---
-cd ~/Projects/llm_engineering/main
+cd ~/Projects/joshphillipssr/llm_engineering/main
 git fetch upstream
 git merge --ff-only upstream/main
 git push origin main
 
 # --- PRODUCTION ---
-cd ~/Projects/llm_engineering/production
+cd ~/Projects/joshphillipssr/llm_engineering/production
 git fetch origin
 git merge origin/main
 git mergetool    # if needed (nbdime)
@@ -234,5 +234,5 @@ git push origin production
 
 ---
 
-**Last Updated:** October 2025  
+**Last Updated:** February 2026  
 **Maintainer:** Josh Phillips (`@joshphillipssr`)
