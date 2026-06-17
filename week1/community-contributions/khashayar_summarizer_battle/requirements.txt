@@ -17,7 +17,7 @@ executing @ file:///home/conda/feedstock_root/build_artifacts/executing_17567293
 h11==0.16.0
 httpcore==1.0.9
 httpx==0.28.1
-idna==3.10
+idna==3.15
 importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_importlib-metadata_1747934053/work
 ipykernel @ file:///Users/runner/miniforge3/conda-bld/ipykernel_1754352890318/work
 ipython @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_ipython_1748711175/work
@@ -44,7 +44,7 @@ pydantic_core==2.33.2
 Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1750615794071/work
 PySocks==1.7.1
 python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work
-python-dotenv==1.1.1
+python-dotenv==1.2.2
 pyzmq @ file:///Users/runner/miniforge3/conda-bld/bld/rattler-build_pyzmq_1757387129/work
 requests==2.32.5
 selenium==4.35.0
@@ -60,7 +60,7 @@ trio==0.30.0
 trio-websocket==0.12.2
 typing-inspection==0.4.1
 typing_extensions==4.14.1
-urllib3==2.5.0
+urllib3==2.7.0
 wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1733231326287/work
 webdriver-manager==4.0.2
 websocket-client==1.8.0
